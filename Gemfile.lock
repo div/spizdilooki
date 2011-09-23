@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/ekosz/resque-heroku-autoscaler.git
+  revision: 57ca770056a0731938460da5c8e1b678119ee65d
+  branch: cedar
+  specs:
+    resque-heroku-autoscaler (0.2.3)
+      heroku
+      resque (>= 1.8)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -175,6 +184,7 @@ DEPENDENCIES
   pg
   rails (= 3.1.0)
   resque
+  resque-heroku-autoscaler!
   rmagick
   sass-rails (~> 3.1.0)
   sqlite3
