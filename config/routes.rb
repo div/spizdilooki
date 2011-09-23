@@ -8,7 +8,7 @@ Spilook::Application.routes.draw do
   root :to => 'looks#index'
   
    mount Resque::Server, :at => "/resque"
-   match 'fetch' => 'fetch#fetch_ids', :as => :fetch
+  # match 'fetch' => 'fetch#fetch_ids', :as => :fetch
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
