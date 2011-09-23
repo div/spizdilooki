@@ -1,4 +1,22 @@
-<h1>Looks<h1>
-<%= link_to"Fetch ID's", fetch_path %>
-<%= render @looks%>
+<div class='hero-unit'>
+	<h1>Привет, T&P!</h1>
+	<p>Насладитесь возможностью комментировать луки спизженные с <a href='http://lookatme.ru'>lookatme.ru</a></p>
+	<div class='span4 offset11'>
+	
+	</div>
+</div>
 
+
+<div class="row">
+	<div id='looks'>
+		<div class='page'>				
+				<%= render  @looks %>			
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class='span12'>		
+				<%=  paginate @looks %>
+	</div>		
+</div>

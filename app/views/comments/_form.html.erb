@@ -1,0 +1,18 @@
+<%= form_for([@look, @new_comment]) do |f| %>
+	<div class="clearfix">
+		<%= f.label 'Имя' %> 
+		<div class='input'>
+			<%= f.text_field :author %>
+		</div>
+	</div> 
+	<div class="clearfix">
+		<%= f.label 'Комментарий' %> 
+		<div class='input'>
+			<%= f.text_area :text, :rows => '5' %>
+		</div>
+	</div> 
+
+	<div class="actions">
+		<%= content_tag(:button, "Отправить", :type=>:submit, :class => 'btn primary')%>
+	</div>
+<% end %>

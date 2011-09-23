@@ -7,8 +7,39 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="topbar">
+	      <div class="fill">
+	        <div class="container">
+          
+			<%= link_to "Spizdilook", root_path, :class => :brand %>
+	          <ul class="nav">
+	            <li class="active"><a href="#">Home</a></li>
+	            <li><a href="#about">About</a></li>
+	            <li><a href="#contact">Contact</a></li>
+	          </ul>
+	        </div>
+	      </div>
+	</div>
+	
+	
+	<% unless flash[:success].blank? %>
+	<div class="container low alert-message success fade in" data-alert="alert">
+	            <a class="close" href="#">×</a>
+	            <p><%= flash[:success] %></p>
+	</div>
+	<% end %>
+	<% unless flash[:error].blank? %>
+	<div class="container low alert-message error fade in" data-alert="alert">
+	            <a class="close" href="#">×</a>
+	            <p><%= flash[:error] %></p>
+	</div>
+	<% end %>
+	
+	
+  	<div class="container low">
 
-<%= yield %>
-
+		<%= yield %>
+	
+  	</div>
 </body>
 </html>

@@ -6,6 +6,7 @@ class Look < ActiveRecord::Base
   validates_presence_of :lookatmeid 
   validates_uniqueness_of :lookatmeid
   accepts_nested_attributes_for :comments
+  paginates_per 20
   
   def fetch_image
     if self.source_img_url
