@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110923095526) do
+ActiveRecord::Schema.define(:version => 20110923135356) do
 
   create_table "looks", :force => true do |t|
     t.string   "name"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20110923095526) do
     t.datetime "updated_at"
     t.boolean  "processing"
     t.string   "source_img_url"
+    t.string   "image"
   end
 
 end

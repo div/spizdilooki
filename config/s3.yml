@@ -1,0 +1,14 @@
+development:
+  bucket: spilook-dev
+  access_key_id: AKIAJZC4T63KFJKZDPTQ
+  secret_access_key: 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
+
+test:
+    bucket: spilook-test
+    access_key_id: AKIAJZC4T63KFJKZDPTQ
+    secret_access_key: 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
+
+production:
+    bucket: spilook-pro
+    access_key_id: AKIAJZC4T63KFJKZDPTQ
+    secret_access_key: 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
