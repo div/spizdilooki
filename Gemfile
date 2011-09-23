@@ -16,6 +16,7 @@ gem 'rmagick'
 gem 'fog'
 gem 'bootstrap-sass', '1.3.0'
 gem 'kaminari'
+gem 'clockwork'
 
 group :development, :test do
   gem 'sqlite3'
