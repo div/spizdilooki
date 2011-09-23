@@ -6,3 +6,4 @@ tmp/
 .gitkeep
 .DS_Store
 public/uploads/
+config/initializers/resque_heroku_autoscaler_setup.rbconfig/initializers/resque_heroku_autoscaler_setup.rb
