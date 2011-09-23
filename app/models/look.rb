@@ -2,6 +2,10 @@ class Look < ActiveRecord::Base
   after_create :fetch_lookatmedata
   scope :published, :conditions => {:processing => false}
   mount_uploader :image, ImageUploader
+  has_many :comments
+  validates_presence_of :lookatmeid 
+  validates_uniqueness_of :lookatmeid
+  accepts_nested_attributes_for :comments
   
   def fetch_image
     if self.source_img_url

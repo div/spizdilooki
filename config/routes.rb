@@ -1,7 +1,12 @@
 Spilook::Application.routes.draw do
   
   
+  resources :looks, :only => [:index, :show] do
+    resources :comments, :only => :create
+  end
+  
   root :to => 'looks#index'
+  
    mount Resque::Server, :at => "/resque"
    match 'fetch' => 'fetch#fetch_ids', :as => :fetch
 

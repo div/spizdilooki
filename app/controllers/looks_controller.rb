@@ -1,13 +1,14 @@
 class LooksController < ApplicationController
+ 
+ 
   def index
-    @looks = Look.published
-    respond_to do |format|
-        format.html  # index.html.erb
-        format.json  { render :json => @looks }
-    end
+    @looks = Look.published    
   end
 
   def show
+    @look = Look.published.find(params[:id])
+    @comments = @look.comments.order('created_at DESC')
+    @new_comment = @look.comments.build   
   end
 
 end
