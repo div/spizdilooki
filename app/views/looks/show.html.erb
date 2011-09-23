@@ -1,2 +1,20 @@
-<h1>Looks#show</h1>
-<p>Find me in app/views/looks/show.html.erb</p>
+<%= image_tag @look.image.url %>
+<h2><%= @look.name %></h2>
+<% if @look.age.blank? || @look.age.length==1 %>
+	<p><%= @look.city %></p>
+<% else %>
+	<p><%= @look.age %>, <%= @look.city %></p>
+<% end %>
+<p><%= @look.dateadded %></p>
+
+<%= render @comments %>
+
+<%= form_for([@look, @new_comment]) do |f| %>
+	<%= f.label 'Имя' %> 
+	<%= f.text_field :author %>
+
+	<%= f.label 'Комментарий' %> 
+
+	<%= f.text_area :text, :rows => '5' %>
+	 <%= f.submit %>
+<% end %>
