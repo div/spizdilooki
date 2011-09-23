@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  city: MyString
+  age: MyString
+  lookatmeid: 1
+  dateadded: MyString
+
+two:
+  name: MyString
+  city: MyString
+  age: MyString
+  lookatmeid: 1
+  dateadded: MyString
