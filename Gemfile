@@ -12,6 +12,8 @@ gem 'nokogiri'
 gem 'carrierwave'
 gem 'heroku'
 gem 'thin'
+gem 'rmagick'
+gem 'fog'
 
 group :development, :test do
   gem 'sqlite3'

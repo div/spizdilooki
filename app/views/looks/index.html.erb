@@ -1,6 +1,7 @@
 <h1>Looks<h1>
 <% @looks.each do |look|%>
 	<h2><%= look.name %> - <%= look.age %> - <%= look.dateadded %> - <%= look.image %></h2>
+	<%= image_tag look.image.url %>
 <% end %>
 
 <%= link_to"Fetch ID's", fetch_path %>
