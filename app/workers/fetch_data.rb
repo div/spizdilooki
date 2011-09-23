@@ -1,8 +1,12 @@
+require 'resque/plugins/resque_heroku_autoscaler'
+
 class FetchData 
   
   require 'rubygems'  
   require 'nokogiri'  
   require 'open-uri'
+
+  extend Resque::Plugins::HerokuAutoscaler
 
   @queue = :fetchdata_queue 
   def self.perform(id)  # Fetching all the details from the look show page including image

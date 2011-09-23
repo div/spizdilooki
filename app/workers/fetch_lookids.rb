@@ -1,8 +1,13 @@
+require 'resque/plugins/resque_heroku_autoscaler'
+
 class FetchLookIds
   
   require 'rubygems'  
   require 'nokogiri'  
   require 'open-uri'  
+  
+  extend Resque::Plugins::HerokuAutoscaler
+  
   @queue = :fetchid_queue  
   def self.perform   # fetching new look_ids form lookatme.ru along with some details about the look
     
