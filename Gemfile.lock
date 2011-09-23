@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/ekosz/resque-heroku-autoscaler.git
+  remote: git://github.com/div/resque-heroku-autoscaler.git
   revision: 57ca770056a0731938460da5c8e1b678119ee65d
   branch: cedar
   specs:

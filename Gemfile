@@ -24,7 +24,7 @@ group :production do
   gem 'pg' 
 end
 
-gem 'resque-heroku-autoscaler', :git => 'git://github.com/ekosz/resque-heroku-autoscaler.git', :branch => 'cedar'
+gem 'resque-heroku-autoscaler', :git => 'git://github.com/div/resque-heroku-autoscaler.git', :branch => 'cedar'
 
 # Gems used only for assets and not required
 # in production environments by default.
