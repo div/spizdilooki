@@ -23,10 +23,11 @@
         background-color: #edf6fa;
         -moz-box-shadow: inset 0px 1px 2px 4px rgba(51, 63, 70, 0.025);
     }
-        .sausage-sp {
+        .sausage-span {
             position: absolute; left: -12px; top: 5px; z-index: 2;
             display: none;
             width: 15px; height: 10px;
+			margin-left: 0;
             padding: 2px;
             color: #888;
             background-color: #fff;
@@ -40,6 +41,6 @@
             -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
             -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
         }
-        .sausage-hover .sausage-sp {
+        .sausage-hover .sausage-span {
             display: block;
         }
