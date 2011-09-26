@@ -1,4 +1,5 @@
 Spilook::Application.routes.draw do
+ 
   
   
   resources :looks, :only => [:index, :show] do
@@ -6,8 +7,9 @@ Spilook::Application.routes.draw do
   end
   
   root :to => 'looks#index'
+  match '/:id' => 'high_voltage/pages#show', :as => :static, :via => :get
   
-   mount Resque::Server, :at => "/resque"
+  mount Resque::Server, :at => "/resque"
   # match 'fetch' => 'fetch#fetch_ids', :as => :fetch
 
   # The priority is based upon order of creation:

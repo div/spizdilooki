@@ -1,0 +1,6 @@
+<% if @looks.num_pages >= @looks.current_page %>
+	
+	$("#looks").append("<div class='page'><%= escape_javascript(render(@looks)) %></div>");
+<% else %>
+	$('#loading').hide();
+<% end	%>

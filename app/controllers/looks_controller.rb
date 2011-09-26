@@ -2,7 +2,12 @@ class LooksController < ApplicationController
  
  
   def index
-    @looks = Look.published.order('lookatmeid DESC').page(params[:page])    
+    @looks = Look.published.order('lookatmeid DESC').page(params[:page])
+    respond_to do |format|
+        format.js
+        format.html # index.html.erb
+        format.xml  { render :xml => @looks }
+    end    
   end
 
   def show
