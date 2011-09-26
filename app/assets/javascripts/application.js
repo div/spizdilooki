@@ -8,5 +8,3 @@
 //= require jquery-ui
 //= require jquery_ujs
 //= require bootstrap-alerts.js
-//= require sausage
-//= require scroll
