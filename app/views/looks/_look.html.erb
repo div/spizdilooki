@@ -1,6 +1,6 @@
 <div class="span4 look" data-page=<%= @looks.current_page %> >	
 	
-	<%= link_to (image_tag look.image.url(:thumb)), look %>
+	<%= link_to (image_tag look.image.url(:thumb), :size => "140x210", :alt => look.name), look %>
 
 	<h3>
 		<%= link_to look.name, look %>

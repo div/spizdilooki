@@ -1,6 +1,5 @@
 class LooksController < ApplicationController
- 
- 
+   
   def index
     @looks = Look.published.order('lookatmeid DESC').page(params[:page])
     

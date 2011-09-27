@@ -8,7 +8,7 @@ Spilook::Application.routes.draw do
   end
   root :to => redirect('/looks')
   # match 'looks/page/:page' => 'looks#index', :via => :get
-  
+  # match '/pages/:id' => redirect('/:id')
   match '/:id' => 'high_voltage/pages#show', :as => :static, :via => :get
   
   mount Resque::Server, :at => "/resque"

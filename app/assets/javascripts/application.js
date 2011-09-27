@@ -9,3 +9,11 @@
 //= require jquery_ujs
 //= require bootstrap-alerts.js
 //= require sausage
+//= require jqueryviewportmini
+//= require spinmin
+//= require spinner
+//= require_self
+
+
+
+

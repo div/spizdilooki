@@ -1,7 +1,7 @@
 <div class='span8'>
 
 	<%= render :partial => 'next_prev' %>
-	<%= image_tag @look.image.url %>
+	<%= image_tag @look.image.url, :size => '380x570', :alt => @look.name %>
 	<h2><%= @look.name %></h2>
 	<%= render :partial => 'look_details', :locals => { :look => @look } %>
 	<p><%= @look.dateadded %></p>
