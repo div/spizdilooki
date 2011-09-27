@@ -1,12 +1,12 @@
+# encoding: utf-8
 class CommentsController < ApplicationController
   def create
     @look = Look.find(params[:look_id])
     @comment = @look.comments.new(params[:comment])
     if @comment.save 
-      flash[:success] = 'Comment added'
+      flash[:success] = 'Комментарий добавлен!'
     else
-      flash[:error] = @comment.errors.full_messages.collect { |msg| msg  }
-      
+      flash[:error] = 'Вы забыли написать текст комментария!'      
     end
     redirect_to look_path(@look)
   end

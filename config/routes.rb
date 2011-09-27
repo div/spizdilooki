@@ -3,10 +3,12 @@ Spilook::Application.routes.draw do
   
   
   resources :looks, :only => [:index, :show] do
+    get 'page/:page', :action => :index, :on => :collection
     resources :comments, :only => :create
   end
+  root :to => redirect('/looks')
+  # match 'looks/page/:page' => 'looks#index', :via => :get
   
-  root :to => 'looks#index'
   match '/:id' => 'high_voltage/pages#show', :as => :static, :via => :get
   
   mount Resque::Server, :at => "/resque"

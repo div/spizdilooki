@@ -1,15 +1,13 @@
-<div class="span4 look">	
+<div class="span4 look" data-page=<%= @looks.current_page %> >	
+	
 	<%= link_to (image_tag look.image.url(:thumb)), look %>
+
 	<h3>
 		<%= link_to look.name, look %>
-		<% if look.created_at >= Time.now - 1.day %>
+		<% if look.new? %>
 			<span class="label success">New</span>
 		<% end %>
 	</h3>
-	<% if look.age.blank? || look.age.length==1 %>
-		<p><%= look.city %></p>
-	<% else %>
-		<p><%= look.age %>, <%= look.city %></p>
-	<% end %>
+	<%= render :partial => 'look_details', :locals => { :look => look } %>
 	<p><small>Комментариев: <%= look.comments.count %></small></p>
 </div>

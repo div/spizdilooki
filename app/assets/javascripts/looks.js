@@ -1,7 +1,5 @@
 $(".pagination").hide();
 $(document).ready(function() {
-
-	$(".alert-message").alert();
-	
+	$(".alert-message").alert();	
 }());
 	

@@ -1,24 +1,13 @@
 <div class='span8'>
+
+	<%= render :partial => 'next_prev' %>
 	<%= image_tag @look.image.url %>
 	<h2><%= @look.name %></h2>
-	<% if @look.age.blank? || @look.age.length==1 %>
-		<p><%= @look.city %></p>
-	<% else %>
-		<p><%= @look.age %>, <%= @look.city %></p>
-	<% end %>
+	<%= render :partial => 'look_details', :locals => { :look => @look } %>
 	<p><%= @look.dateadded %></p>
 	
-	<div class='spread'>
-	  <div class='twshare left'>
-	    <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	  </div>
-	  <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="" layout="button_count" show_faces="false" width="450" font=""></fb:like>
-	</div>
-	
-	
+	<%= render :partial => 'social' %>
 </div>
-
-
 
 <div class='span7 '>
 	<h2>Комментарии (<%= @comments.count %>):</h2></br>

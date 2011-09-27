@@ -1,0 +1,12 @@
+	<div class="prev-next">
+		<% if @look.previous %>
+			<%= link_to "← Предыдущий", @look.previous, :class => 'btn' %>
+		<% else %>
+			<button class="btn disabled" disabled="disabled">← Предыдущий</button>
+		<% end %>
+		<% if @look.next %>
+			<%= link_to "Следующий →", @look.next, :class => 'btn floatr'%>	
+		<% else %>
+			<button class="btn disabled floatr" disabled="disabled">Следующий →</button>			
+		<% end %>
+	</div>

@@ -3,22 +3,40 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .hero-unit{
 	width: 740px;
+	margin-bottom:0;
 }
 .low{
 	margin-top: 60px;
 }
 .look{
-	height: 330px;
+	height: 300px;
+	margin-top: 50px;
 }
 .hidden{
 	display: none;
 }
 .page {
-	height: 1650px;
+	height: 1750px;
 }
 #spin{
 	float: left;
 	width: 50px;
 	position: relative;
 	top: -7px;
+}
+.back-to-start{
+	display:none;
+}
+#end{
+	display:none;
+}
+#loading{
+	width: 860px;
+}
+.floatr{
+	float: right;
+}
+.prev-next{
+	width: 380px;
+	margin-bottom: 10px;
 }

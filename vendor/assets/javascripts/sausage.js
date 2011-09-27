@@ -64,6 +64,7 @@
             self.$outer = $el;
             // Use `body` for the inner element if the outer element is `window`. Otherwise, use the first child of `$el`.
             self.$inner = $.isWindow(self.element.get(0)) ? $('body') : $el.children(':first-child');
+ 			// self.$inner = $el.children(':first-child');
             self.$sausages = $('<div class="sausage-set"/>');
             self.sausages = self.$sausages.get(0);
             self.offsets = [];
