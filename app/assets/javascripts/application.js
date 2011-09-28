@@ -11,7 +11,6 @@
 //= require sausage
 //= require jqueryviewportmini
 //= require spinmin
-//= require spinner
 //= require_self
 
 
