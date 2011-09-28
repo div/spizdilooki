@@ -9,5 +9,9 @@ public/uploads/
 config/initializers/resque_heroku_autoscaler_setup.rbconfig/initializers/resque_heroku_autoscaler_setup.rb
 .rdb
 config/initializers/resque_heroku_autoscaler_setup.rb
-
+config/s3.yml
 dump.rdb
+
+config/s3.yml
+
+config/s3.yml
