@@ -2,7 +2,7 @@
 
 	<p><%= comment.text %></p>
 	<% if comment.author.blank? %>
-		<small>Оставил: Аноним (<%= time_ago_in_words(comment.updated_at) %> ago)</small>
+		<small>Оставил: Уебан ;) (<%= time_ago_in_words(comment.updated_at) %> ago)</small>
 	<% else %>
 		<small>Оставил: <%= comment.author %> (<%= time_ago_in_words(comment.updated_at) %> ago)</small>
 	<% end %>
