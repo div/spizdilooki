@@ -14,9 +14,9 @@
           
 			<%= link_to "Spizdilooki", root_path, :class => :brand %>
 	          <ul class="nav">
-	            <li class = <%= is_home? %> ><%= link_to 'Home', root_path %></li>
-	            <li class = <%= is_active?("about") %> ><%= link_to 'About', static_path("about") %></li>
-	            <li class = <%= is_active?("contact") %> ><%= link_to 'Contact', static_path("contact") %></li>
+	            <li class = <%= is_home? %> ><%= link_to 'Главная', root_path %></li>
+	            <li class = <%= is_active?("about") %> ><%= link_to 'О себе', static_path("about") %></li>
+	            <li class = <%= is_active?("contact") %> ><%= link_to 'Связаться', static_path("contact") %></li>
 				
 	          </ul>
 	        </div>
