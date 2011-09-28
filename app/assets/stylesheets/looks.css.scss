@@ -1,22 +1,32 @@
 // Place all the styles related to the Looks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+	padding-top: 60px;
+}
 .hero-unit{
 	width: 740px;
 	margin-bottom:0;
 }
-.low{
-	margin-top: 60px;
+.hero-unit h1{
+	margin-bottom: 20px;
 }
+.hero-unit h2{
+	margin-bottom: 20px;
+}
+
 .look{
 	height: 300px;
-	margin-top: 50px;
+	margin-top: 20px;
+}
+p.lookdetails{
+	margin-bottom: 0;
 }
 .hidden{
 	display: none;
 }
 .page {
-	height: 1750px;
+	height: 1600px;
 }
 #spin{
 	float: left;

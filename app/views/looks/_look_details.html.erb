@@ -1,5 +1,5 @@
 	<% if look.age.blank? || look.age.length==1 %>
-		<p><%= look.city %></p>
+		<p class='lookdetails'><%= look.city %></p>
 	<% else %>
-		<p><%= look.age %>, <%= look.city %></p>
+		<p class='lookdetails'><%= look.age %>, <%= look.city %></p>
 	<% end %>
