@@ -16,9 +16,9 @@ class LooksController < ApplicationController
     @new_comment = @look.comments.build   
   end
   
-  def refetch
-    Resque.enqueue(Refetch)
-    redirect_to root_path
-  end
+#  def refetch
+#    Resque.enqueue(Refetch)
+#    redirect_to root_path
+#  end
 
 end

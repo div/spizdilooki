@@ -25,7 +25,7 @@ class FetchLookIds
         id = item.at_css(".name a")[:href].to_s
         id = id.split("/looks/")[1]          
         id = id.to_i  # get the id => get the show_url of each look, so we can fire another job to get data
-        return id if id <  latest_fetched_id - 20   # Go for 20 additional looks - if lookatme messed up smth!
+        return id if id <  latest_fetched_id - 200   # Go for 200 additional looks - if lookatme messed up smth!
         look = Look.new
         look.lookatmeid = id
         look.age = item.at_css(".age").text # age and city are easier to get from index page, then from show page

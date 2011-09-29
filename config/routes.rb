@@ -1,7 +1,7 @@
 Spilook::Application.routes.draw do
  
   
-  match 'refetch' => 'looks#refetch'
+  # match 'refetch' => 'looks#refetch'
   resources :looks, :only => [:index, :show] do
     get 'page/:page', :action => :index, :on => :collection
     resources :comments, :only => :create
@@ -11,7 +11,7 @@ Spilook::Application.routes.draw do
   # match '/pages/:id' => redirect('/:id')
   match '/:id' => 'high_voltage/pages#show', :as => :static, :via => :get
   
-   mount Resque::Server, :at => "/resque"
+  # mount Resque::Server, :at => "/resque"
   # match 'fetch' => 'fetch#fetch_ids', :as => :fetch
 
   # The priority is based upon order of creation:
